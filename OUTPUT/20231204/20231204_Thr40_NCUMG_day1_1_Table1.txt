@@ -1,0 +1,5 @@
+"Obs"   "Fcst"
+"Gridpoints>= 40 mm/day"   1099   661
+"Average Rain Rate (mm/day)"   99.9   77.3
+"Maximum Rain (mm/day)"   369.5   226.8
+"Rain Volume (km^3)"   79.2   36.8

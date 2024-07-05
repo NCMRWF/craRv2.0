@@ -1,0 +1,4 @@
+"Displacement Error"   19.23
+"Volume Error"   30.97
+"Pattern Error"   49.8
+"Rotation Error"   0
