@@ -1,0 +1,2 @@
+cd SCRIPTS
+./CRA_Calc_Submit.sh yyyymmdd

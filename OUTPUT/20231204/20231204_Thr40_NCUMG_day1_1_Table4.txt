@@ -1,0 +1,4 @@
+"Location Error"
+"Lon (Deg.)"   0.25
+"Lat (Deg.)"   1.25
+"Angle (Deg.)"   0
