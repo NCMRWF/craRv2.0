@@ -12,7 +12,7 @@ case=Test
 OUT_PREFIX=${OUT_PATH}/${date}_Thr${Threshold}_${case}
 Ngrids=6 
 minsize=10
-sepdist=5
+sepdist=1
 iopt=2  # 2: with rotation error and 1:without rotation error 
 ##################################################
 
@@ -163,6 +163,15 @@ print("-----------------------------------------------------------------")
 ##################################################################
 source("../SRC/CRA_Err_Decomp_Features.R")
 CRA_Err_Decomp(Obs_nm,Mod_nm,Obj_Obs,Obj_Model,thr=${Threshold},objnum=ii,"${OUT_PREFIX}",Ngrids=${Ngrids},iopt=${iopt})
+print(".................. Running  for plotting ......................... TESTING...............")
+iopt=${iopt}
+if (iopt==2) {
+args=c(${date},ii,"${case}","${OUT_PATH}","${Threshold}")
+system2("../SCRIPTS/Run_CRA_Plot.sh",args=args)
+} else {
+args=c(${date},ii,"${case}","${OUT_PATH}","${Threshold}")
+system2("../SCRIPTS/Run_CRA_Plot_NoRot.sh",args=args)
+}
 }
 dev.off()
 EOF
