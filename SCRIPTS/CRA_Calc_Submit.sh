@@ -166,10 +166,10 @@ CRA_Err_Decomp(Obs_nm,Mod_nm,Obj_Obs,Obj_Model,thr=${Threshold},objnum=ii,"${OUT
 print(".................. Running  for plotting ......................... TESTING...............")
 iopt=${iopt}
 if (iopt==2) {
-args=c(${date},ii,"${case}","${OUT_PATH}","${Threshold}")
+args=c("${date}",ii,"${case}","${OUT_PATH}","${Threshold}")
 system2("../SCRIPTS/Run_CRA_Plot.sh",args=args)
 } else {
-args=c(${date},ii,"${case}","${OUT_PATH}","${Threshold}")
+args=c("${date}",ii,"${case}","${OUT_PATH}","${Threshold}")
 system2("../SCRIPTS/Run_CRA_Plot_NoRot.sh",args=args)
 }
 }
